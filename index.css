@@ -9,7 +9,37 @@ section {
 }
 
 .item {
-	margin-top: 7px;
-	margin-bottom: 7px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	padding: 7px;
+	padding-left: 15px;
+	transition: border-left 0.3s ease-out;
+}
+.item:hover {
+	border-left: 10px solid red;
+}
+
+
+.comand {
+	display: flex;
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 2px;
+}
+.c-git, .c-key, .c-args {
+	display: flex;
+	padding-right: 10px;
+}
+.c-key {color: blue;}
+.c-args {color: grey;}
+
+
+.description {
+	display: flex;
+	font-size: 18px;
+	border-top: 1px solid purple;
+	padding-top: 2px;
+	padding-left: 12px;
 }

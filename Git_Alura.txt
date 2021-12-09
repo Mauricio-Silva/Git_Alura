@@ -123,7 +123,7 @@ git rebase --continue
 
 [!] Branch Principal: master
 [!] Branch Paralela: alternative
-[!] Nome do Repositorio Local: origin
+[!] Nome do Repositorio Remoto: origin
 
 [!] Salvar Alterações: add + commit
 [!] Modo Interativo: git add -i
