@@ -1,0 +1,134 @@
+Controle de Versão: trabalhar com diferentes versões e atualizações de um mesmo projeto
+ - Verções do projeto
+ - Histórico de atulizações
+ - Verificar alterações feitas
+ - Verificar quem fez as alterações
+
+GitHub: Plataforma Servidor Online que instaura o controle de versões do Git
+
+[!] Comandos Git:
+
+git tag
+ - Mostra as versões existentes do projeto
+
+git diff Versão1/Tag1 Versão2/Tag2
+ - Mostra as diferenças entre duas versões do projeto
+
+git blame NomeArquivo
+ - Mostra o que foi alterado por linha
+ - Mostra o nome do arquivo
+ - Mostra quem alterou o arquivo
+ - Mostra data e hora da alteração
+ - Mostra o código que foi alterado
+
+git clone URL
+ - Clona um repositorio
+
+git init
+ - Transforma uma pasta em um repositório
+
+git ls-files
+ - Mostra os arquivos que o git esta controlando
+
+git status
+ - Mostra os status dos arquivos do repositorio
+
+git add NomeArquivo
+ - Faz o Git controlar um arquivo (que não estava sendo controlado)
+
+git commit -m "Mensagem"
+ - Salvar alterações no repositório
+
+git config user.name ""
+ - Especifica o nome do usuario que fez as modificações
+
+git config user.email ""
+ - Especifica o email do usuario que fez as modificações
+
+git log
+ - Mostra o histórico de commits
+
+git whatchanged
+ - Mostra quais arquivos foram alterados
+
+git whatchanged -p
+ - Mostra quais arquivos foram alterados
+ - Mostra o que foi alterado em cada commit
+
+
+git remote
+ - Mostra quantos repositorios remotos o repositorio local possui
+
+git remote add Nome URLRepositorioGitHub
+ - Cria um repositório remoto para o repositório local
+
+git push NomeRepositorioRemoto Branch(ex: master)
+ - Envia alterações para o repositorio remoto
+
+git branch
+ - Mostra as branchs do projeto
+
+git branch Nome
+ - Cria uma branch
+
+git checkout NomeBranch
+ - Troca a versão do projeto
+ - Alterna para a branch utilizada no projeto
+
+git push -u NomeRepositorioRemoto Branch
+ - Envia alterações para o repositorio remoto
+ - Sendo que branch local deve ser igual a branch remota
+
+git pull NomeRepositorioRemoto NomeBranch
+ - Traz alretações do repositorio remoto
+
+git branch -r
+ - Mostra as branchs remotas
+
+git branch -t Nome
+ - Cria uma nova branch local ligada com uma branch remota já existente
+
+git branch -d Nome
+ - Deleta uma branch
+
+git branch -a
+ - Mostra todas as branchs, locais e remotas
+
+git checkout -t NomeRepositorioLocal/NomeBranch
+ - Cria uma branch local com o mesmo nome de uma remota
+ - Alterna para a branch recem criada
+ - Sincroniza a branch local com a remota
+
+git push -d NomeRepositorioLocal NomeBranch
+ - Deleta uma branch remota
+
+git fetch NomeRepositorioLocal
+ - Mostra se novas branchs foram criadas no repositorio remoto
+
+git checkout -b NomeBranch
+ - Cria uma nova branch
+ - Alterna para a nova branch criada
+
+git merge NomeBranch
+ - Traz os commits de outra branch
+
+git rebase NomeBranch(branch base) NomeBranch(branch a ser alterada)
+ - Atualiza uma branch com base em outra
+
+git rebase --continue
+ - Contua um rebase interrompido por conflito/erros
+
+
+
+
+[!] Branch Principal: master
+[!] Branch Paralela: alternative
+[!] Nome do Repositorio Local: origin
+
+[!] Salvar Alterações: add + commit
+[!] Modo Interativo: git add -i
+[!] Salvar Alterações no GitHub: add + commit + push
+
+[!]
+ - Sempre que trocar para a branch master, fazer git pull para atualiza-la
+ - Sempre checar se há alterações antes de tudo
