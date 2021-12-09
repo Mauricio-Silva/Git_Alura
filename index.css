@@ -1,0 +1,15 @@
+body {
+	margin: 0px;
+}
+
+section {
+	max-width: 1000px;
+	box-shadow: 0px 0px 7px black;
+	margin: 20px auto 20px auto;
+}
+
+.item {
+	margin-top: 7px;
+	margin-bottom: 7px;
+	padding: 7px;
+}
